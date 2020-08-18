@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Formulários</title> 
+    </head>
+    <body>
+<div>
+        <form action="processa.php" method="POST">
+            <label>text</label>
+            <input type="text" name="text1" placeholder="Nome completo">
+            <br>
+            <label>Senha</label>
+            <input type="password" name="senha">
+            <br>
+            <label> Oculta</label>
+            <input type="hidden" name="informacao_oculta" value="mensagem oculta">
+
+            <br>
+            <label> Select</label>
+            <select name="selecao">
+                <option value="Opcao1">Opção 1</option>
+                <option value="Opcao2">Opção 2</option>
+                <option value="Opcao3">Opção 3</option>
+
+            </select>
+
+
+            <br>
+            <label>Radio </label><br>
+            <input type="radio" name="radio1" value="1"> valor 1 <br>
+            <input type="radio" name="radio1" value="1"> valor 2
+
+            <br>
+
+            <label>CheckBox</label> <br>
+
+            <input type="checkbox" name="checkbox1" value="1"> Valor 1 <br>
+            <input type="checkbox" name="checkbox1" value="1"> Valor 2 <br>
+            <input type="checkbox" name="checkbox1" value="1"> Valor 3 <br>
+
+            <br>
+
+            <input type="submit" onclick="funcao01()" value="Enviar" name="submit">
+            
+            <script>
+
+                function funcao01(){
+                    alert("Dados enviados com sucesso!")
+                }
+            </script>
+
+
+
+
+
+        </form>
+</div>
+
+
+
+        
+    </body>
+</html>

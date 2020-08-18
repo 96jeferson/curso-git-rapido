@@ -1,0 +1,213 @@
+
+    /* comentando em css */
+
+    p{
+        color: white;
+        font-size: 20;
+        font-family: Helvetica, Arial;
+        text-shadow: 1px 1px 1px #111111;
+        
+    }
+
+    body{
+        background-color: black;
+    }
+
+    /* retirando espaçamento nativo CSS */
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica;
+
+    }
+
+    header{
+        background:#ADFF2F;
+        height: 35px;
+
+        /*padding é uma margem interna*/
+        padding: 20px;
+
+    }
+    /*IDS */
+
+    h1{
+        color:yellow;
+        text-shadow: 1px 1px 1px #111111;
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    #principal{
+
+        background-image:url(imagens/fundo2.jpg) ;
+        background-color: black;
+        background-size: 100%;
+        min-height: 200px;
+        padding: 10px;
+        clear: both;
+    
+    }
+
+    #container2 {
+        width: 100%;
+        border-color: black;
+        text-align: center;
+       
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+        object-fit: fill;
+      }
+
+    #esquerda{
+        /*
+        background-color: black;
+        color: white;
+        min-height: 200px;
+        width: 30%;
+        padding: 10px;
+        float: left;*/
+
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 30%; /* Valor da Largura */
+       display: inline-block;
+    }
+
+  
+     #interna {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 30%; /* Valor da Largura */
+        display: inline-block;
+        }
+
+
+    #direita{
+
+        /*
+        background-color: black;
+        color: white;
+        min-height: 200px;
+        width: 30%;
+        padding: 10px;
+        float: right;*/
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 30%; /* Valor da Largura */
+        display: inline-block;
+
+    }
+    footer{
+
+        background-color: #ADFF2F;
+        color: white;
+        height: 50px;
+        clear: both;
+        text-shadow: 1px 1px 1px #111111;
+
+        /*propriedade que centraliza o texto é o text-align: center;*/
+        text-align: center;
+
+        padding:10px;
+    }
+
+    /* SE DECLASSE CLASS USANDO PONTO (.)*/
+
+    .container{
+        width: 1000pxs;
+        margin: 0 auto;
+        
+
+    }
+
+
+    .second{
+        width: 1000pxs;
+        margin: 0 auto
+        
+
+    }
+
+    .efeito{
+
+        background-color:rgba(0, 0, 0, 0.5);
+        padding: 100px 0 100px 0;
+        
+    }
+
+
+   
+
+    #logo{
+        float: left;
+
+    }
+
+    #menu{
+        padding: 20x 20x;
+        float: right;
+        margin-top: 20px;
+
+    }
+
+    #menu a:hover{
+    background-color: black;
+    color:white
+
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+        padding: 15px;
+        
+    }
+
+    #footer{
+
+        padding: 20x 20x;
+        float: center;
+        margin-top: 20px;
+        
+    }
+
+    #footer a{
+        text-decoration: none;
+        color: black;
+
+        /*text-shadow: 1px 1px 1px white;*/
+        padding: 15px;
+        
+    }
+
+
+    .wrap {
+        /*Ajuste a largura e altura desejadas aqui*/
+        width: 800px;
+        height: 300px;
+    
+        /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+        position: relative;
+    }
+    
+    .wrap > .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+    }
+    .wrap > .bg-video > video {
+        width: 100%;
+    }

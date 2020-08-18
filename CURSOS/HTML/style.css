@@ -1,0 +1,105 @@
+
+/* comentando em css */
+
+p{
+    color: white;
+    font-size: 20;
+    font-family: Helvetica, Arial;
+    text-shadow: 1px 1px 1px #111111;
+    
+}
+
+body{
+    background-color: black;
+}
+
+/* retirando espaçamento nativo CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+
+}
+
+header{
+    background:black;
+    height: 35px;
+
+    /*padding é uma margem interna*/
+    padding: 20px;
+
+}
+/*IDS */
+
+h1{
+    color:yellow;
+    text-shadow: 1px 1px 1px #111111;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+#principal{
+    background-image:url(imagens/fundo.png) ;
+    background-size: 100%;
+    min-height: 200px;
+   padding: 20px;
+   clear: both;
+   
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    height: 50px;
+    clear: both;
+    text-shadow: 1px 1px 1px #111111;
+
+    /*propriedade que centraliza o texto é o text-align: center;*/
+    text-align: center;
+
+    padding:10px;
+}
+
+/* SE DECLASSE CLASS USANDO PONTO (.)*/
+
+.container{
+    width: 1000pxs;
+    margin: 0 auto
+    
+
+}
+
+.efeito{
+
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 100px 0 100px 0;
+    
+}
+
+#logo{
+    float: left;
+
+}
+
+#menu{
+    padding: 20x 20x;
+    float: right;
+    margin-top: 20px;
+
+}
+
+#menu a:hover{
+background-color: black;
+color:white
+
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    padding: 15px;
+    
+}
